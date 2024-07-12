@@ -3,6 +3,7 @@ import { SubCategory } from "./subcategory.model";
 
 
 export interface Product {
+  productId: number,
   productName: string,
   productImageURL: string,
   description: string,

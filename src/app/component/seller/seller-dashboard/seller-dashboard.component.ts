@@ -21,6 +21,9 @@ export class SellerDashboardComponent {
   addProduct() {
     this.router.navigate(['/addProduct']);
   }
+  goToViewProducts() {
+    this.router.navigate(['/seller-dashboard/view-My-Products']);
+  }
   Logout() {
     this.router.navigate(['/login']);
   }

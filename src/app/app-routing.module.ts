@@ -14,15 +14,16 @@ import { SellerRegisterComponent } from './component/seller/seller-register.comp
 import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { SellerDashboardComponent } from './component/seller/seller-dashboard/seller-dashboard.component';
 import { CustomerDashboardComponent } from './component/customer/customer-dashboard/customer-dashboard.component';
+import { ProductListComponent } from './component/product-list/product-list.component';
+import { ViewMyProductsComponent } from './component/seller/view-my-products/view-my-products.component';
 
 const routes: Routes = [
-  {path:'welcome',component:WelcomeComponent},
+  { path: '', component: WelcomeComponent },
   {path:'login',component:LoginComponent},
   {path: 'customerRegister',component:CustomerComponent},
   {path:'addAdmin', component: AddAdminComponent},
   {path:'adminDashboardHeader', component: AdminHeaderComponent},
   {path:'viewAdmin', component: ViewAdminComponent},
- { path: '', component: WelcomeComponent },
   {path:'adminDashboard', component: AdminDashboardComponent,},
   {path:'aboutUs', component:AboutUsComponent},
   {path:'contactUs',component:ContactUsComponent},
@@ -30,8 +31,22 @@ const routes: Routes = [
   {path:'view-profile',component:CustomerComponent},
   {path:'sellerRegister',component:SellerRegisterComponent},
   {path:'addProduct',component:ProductDetailsComponent},
-  {path:'sellerDashboard',component:SellerDashboardComponent},
-  {path:'customerDashboard',component:CustomerDashboardComponent}
+  // {path:'sellerDashboard',component:SellerDashboardComponent},
+  {path:'customerDashboard',component:CustomerDashboardComponent},
+  {path:'adminDashboard/viewProducts',component:ProductListComponent},
+
+  {path:'sellerDashboard', component:SellerDashboardComponent},
+  // {path:'sellerRegister',component:SellerComponent},
+  //   {path:'sellerDashboard/view-profile',component:ViewProfileComponent},
+  //   {path:'seller-dashboard/add-products',component:AddProductComponent},
+  //   {path:'seller-dashboard/view-categories',component:ViewCategoriesComponent},
+  //   {path:'seller-dashboard/view-sub-categories',component:ViewSubCategoriesComponent},
+  //   {path:'seller-dashboard/view-orders',component:ViewOrdersComponent},
+  //   {path:'seller-dashboard/view-payments',component:ViewPaymentsComponent},
+    {path:'seller-dashboard/view-My-Products',component:ViewMyProductsComponent},
+    // {path:'seller-dashboard/view-orders/update-order-items/:orderId',component:UpdateOrderItemsComponent}
+
+  
   
  
 

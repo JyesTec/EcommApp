@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit{
       }
       if(this.role==="seller"){
         // this.localStorageService.setItem("token", this.token);
-        // this.localStorageService.setItem("sellerId", this.response.data.sellerId);
+         this.localStorageService.setItem("sellerId", responseData.data.sellerId);
         // this.localStorageService.setItem("sellerPhoneNumber", this.response.data.phoneNumber);
         this.router.navigate(['/sellerDashboard']);
       }

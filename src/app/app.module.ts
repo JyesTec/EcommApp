@@ -20,6 +20,7 @@ import { ProductListComponent } from './component/product-list/product-list.comp
 import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { SellerRegisterComponent } from './component/seller/seller-register.component';
 import { SellerDashboardComponent } from './component/seller/seller-dashboard/seller-dashboard.component';
+import { ViewMyProductsComponent } from './component/seller/view-my-products/view-my-products.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { SellerDashboardComponent } from './component/seller/seller-dashboard/se
     ProductDetailsComponent,
     SellerRegisterComponent,
     ProductDetailsComponent,
-    SellerDashboardComponent
+    SellerDashboardComponent,
+    ProductListComponent,
+    ViewMyProductsComponent
   ],
   imports: [
     BrowserModule,

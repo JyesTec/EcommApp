@@ -19,6 +19,9 @@ export class AdminHeaderComponent {
   addAdmin() {
     this.router.navigate(['/addAdmin']);
   }
+  viewAllProducts() {
+    this.router.navigate(['/adminDashboard/viewProducts']);
+  }
   Logout() {
     this.router.navigate(['/login']);
   }
