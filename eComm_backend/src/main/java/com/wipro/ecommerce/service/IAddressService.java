@@ -15,4 +15,5 @@ public interface IAddressService {
 	public AddressDTO getAddressById(int addressId);
 
 	public List<Address> getAllAddress();
+	public Address updateAddress1(AddressDTO addressDTO);
 }

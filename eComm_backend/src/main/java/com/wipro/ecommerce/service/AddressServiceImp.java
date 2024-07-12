@@ -49,6 +49,10 @@ public class AddressServiceImp implements IAddressService {
 		logger.info("Address updated");
 		return repo.save(address);
 	}
+	
+	public Address updateAddress1(AddressDTO addressDTO) {
+		return repo.saveAll(addressDTO);
+	}
 
 	@Override
 	public String deleteAddressById(int addressId) {
